@@ -1,0 +1,62 @@
+
+
+
+.container{
+   
+    width: 100%;
+    padding: 1rem;
+   
+    
+}
+
+/* .content{
+    text-align: center;
+    margin-left: 50%;
+} */
+.content p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top:1.5rem;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 50.8px;
+    margin-bottom: 2rem;
+    /* text-align: center; */
+    color:#ffffff;
+  }
+  #content_discription{
+    font-size:1rem ;
+    opacity: 0.8;
+  
+  }
+  .form_container{
+    width: 10rem;
+   
+    padding: 1rem;
+    border-radius: 10px;
+ 
+  }
+  
+  .form_main{
+
+    width: 87%;
+   
+    margin-bottom: 2rem;
+
+    border-radius: 20px;
+    background-color: #ffffff30;
+  }
+  
+  .div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* media query for contact Us page */
+  

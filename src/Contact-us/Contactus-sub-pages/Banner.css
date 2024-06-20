@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+  
+  
+
+.container_1 {
+    margin: 0 auto;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52vw;
+    
+    position: relative; /* Ensure relative positioning */
+    background-image: url("../assets/Contactus.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    }
+    
+    .container_1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 73, 73, 0.647); /* Adjust opacity here */
+    z-index:-1;
+    }
+    
+    
+    .heading {
+    margin-top: 9rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+    }
+    .heading h1{
+      font-size: 2rem;
+    padding-bottom: 1em;
+    z-index: 111;
+    
+    opacity: 1 !important;
+    
+    }
+    .contactus_icons_mail{
+      width: 4rem;
+      height: 3rem;
+    }
+
+    .contactus_icons_mail:hover{
+      cursor: pointer;
+    }
+    
+    .contactus_icons_location{
+      width: 3.5rem;
+      height: 4rem;
+    }
+    .contactus_icons_phone{
+      width: 3rem;
+      height: 4rem;
+    }
+
+    .contactus_icons_phone:hover{
+      cursor: pointer;
+    }
+    
+    .title {
+    
+    z-index: 1;
+    opacity: 1 !important;
+    margin: 5px;
+    padding: 1rem;
+    height: 10vw;
+    width:auto;
+    /* background: rgba(104, 102, 102, 0.653); */
+    background-color: #f4f4f46d;
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+      border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    }
+    .title span {
+    color: #E23636;
+    }
+    /* .cards div img{
+    color: red;
+    } */
+    .cards div a{
+    opacity: 1 !important;
+    color: white;
+    }
+    .cards div a:hover{
+      color: #E23636;
+    }
+    
+    #t1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Josefin Sans';
+    }
+    
+    #t2 {
+
+    font-size: 1rem;
+    font-weight: 500;
+  opacity:0.9;
+    
+    
+    
+    }
+    
+    .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width:100%;
+    max-width: 700px;
+
+    }
+    
+    .cards div {
+
+      background: rgba(104, 102, 102, 0.653);
+     border-radius: 8px;
+    padding:8px;
+    text-align: center;
+    flex: 1;
+    
+    }
+    
+    .cards img {
+    display: inline;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #E23636;
+    }
+
+    .cards img:hover{
+      cursor: pointer;
+    }
+
+  #email_title{
+    margin-top: 16px;
+    padding-bottom: 18px;
+  }
+  #Office_hours{
+    margin-bottom: 22px;
+  }
+    
+    .cards p {
+    font-size: 0.9em;
+    margin: 1px 0;
+    opacity: 0.9;
+
+    }
+    .cards address{
+    font-style: normal;
+    font-size: 1.1em;
+ 
+    
+    }
+    
+    .cards a {
+    text-decoration: none;
+    font-size: 1.1em;
+   
+    }
+    
+
+
+    @media (min-width: 320px) and (max-width: 480px) {
+    .container_1{
+      height:100%;
+    }
+      .title{
+       width: auto;
+       height: 12rem;
+       margin-bottom: 3rem;
+      
+      }
+      .contactus_icons_mail{
+         width: 3rem;
+         height: 2rem;
+       }
+       .contactus_icons_location{
+         width: 2.6rem;
+         height: 3rem;
+       }
+       .contactus_icons_phone{
+         width: 2rem;
+         height: 3rem;
+       }
+      .cards{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+      }
+        #t1{
+         line-height: 1.2;
+        }
+        .content p{
+           line-height: 1;
+           
+        }
+        #content_discription{
+           line-height: 1;
+           padding-top: 10px;
+           padding-bottom: 15px;
+        }
+     }
+     @media (min-width: 480px) and (max-width:800px) {
+   .container_1{
+    height:65rem;
+   }
+   .contactus_icons_mail{
+      width: 3rem;
+      height: 2rem;
+    }
+    .contactus_icons_location{
+      width: 2.6rem;
+      height: 3rem;
+    }
+    .contactus_icons_phone{
+      width: 2rem;
+      height: 3rem;
+    }
+       .title{
+           width:90%;
+           height:25vw;
+           margin-bottom:4rem ;
+          }
+          .cards{
+           width:auto;
+           display:flex;
+           flex-direction: column;
+           
+          }
+            #t1{
+             line-height: 1.2;
+            }
+            .content p{
+               line-height: 1;
+               
+            }
+            #content_discription{
+               line-height: 1;
+               padding-top: 10px;
+               padding-bottom: 15px;
+            }
+   }
+   @media (min-width:800px) and (max-width:900px){
+    .container_1{
+      height: 70vw
+  }
+    
+    .title{
+         width:85%;
+         height: 9rem;
+        }
+        .contactus_icons_mail{
+         width: 3rem;
+         height: 2rem;
+       }
+       .contactus_icons_location{
+         width: 2.6rem;
+         height: 3rem;
+       }
+       .contactus_icons_phone{
+         width: 2rem;
+         height: 3rem;
+       }
+        .cards{
+          margin-top: 3rem;
+         width:auto;
+         display: flex;
+         flex-direction: row;
+        
+         
+        }
+          #t1{
+           line-height: 1.2;
+          }
+          .content p{
+             line-height: 1;
+             
+          }
+          #content_discription{
+             line-height: 1;
+             padding-top: 10px;
+             padding-bottom: 15px;
+          }
+   }
+   @media (min-width:900px) and (max-width:1024px){
+      .container_1{
+          height: 70vw
+      }
+      .title{
+          width:90%;
+          height: 7rem;
+         }
+         .cards{
+         width:auto;
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+          
+         }
+         .contactus_icons_mail{
+            width: 3rem;
+            height: 2rem;
+          }
+          .contactus_icons_location{
+            width: 2.6rem;
+            height: 3rem;
+          }
+          .contactus_icons_phone{
+            width: 2rem;
+            height: 3rem;
+          }
+           #t1{
+            line-height: 1.2;
+           }
+           .content p{
+              line-height: 1;
+              
+           }
+           #content_discription{
+              line-height: 1;
+              padding-top: 10px;
+              padding-bottom: 15px;
+           }
+   
+   }
+   @media (min-width:1024px) and (max-width:1050px) {
+       .container_1{
+        height:65vw ;
+       }
+       .title{
+           width:auto;
+           line-height: normal;
+           
+          }
+          .cards{
+          
+            padding-top: 6rem;
+          width: auto;
+         
+           
+          }
+          .contactus_icons_mail{
+            width: 3rem;
+            height: 2rem;
+          }
+          .contactus_icons_location{
+            width: 2.6rem;
+            height: 3rem;
+          }
+          .contactus_icons_phone{
+            width: 2rem;
+            height: 3rem;
+          }
+            #t1{
+             line-height:1;
+            }
+            .content p{
+               line-height: 1;
+               
+            }
+            #content_discription{
+               line-height: 1;
+               padding-bottom: 1px;
+            }
+   }
+   
+   
+   @media (min-width:1050px) and (max-width:1250px) {
+      .container_1{
+          height: 70vw;
+      }
+      .title{
+        /* padding-top: 1rem; */
+          width:70%;
+         }
+         .cards{
+           padding-top: 5rem;
+         width: auto;
+        
+          
+         }
+           #t1{
+            line-height: 1.2;
+           }
+           .content p{
+              line-height: 1;
+              
+           }
+           #content_discription{
+              line-height: 1;
+              padding-top: 10px;
+              padding-bottom: 15px;
+           }
+   }
+   @media (min-width:1250px) and (max-width:1450px) {
+      .container_1{
+          height:52vw;
+      }
+      .title{
+        padding-top: 1rem;
+          width:60%;
+         }
+         .cards{
+           padding-top: 6rem;
+   
+         width: auto;
+        
+          
+         }
+           #t1{
+            line-height: 1.2;
+           }
+           .content p{
+              line-height: 1;
+              
+           }
+           #content_discription{
+              line-height: 1;
+              padding-top: 10px;
+              padding-bottom: 15px;
+           }
+   }
+   
+   @media (min-width:1450px) and (max-width:2602px) {
+    .container_1{
+        height:62vw;
+    }
+    .title{
+      padding:3rem;
+        width:60%;
+      
+       }
+       .cards{
+         padding-top: 6rem;
+         width: 70vw;
+         height: auto;
+         
+   
+      
+        
+       }
+         #t1{
+          line-height: 1.2;
+         }
+         .content p{
+            line-height: 1;
+            
+         }
+         #content_discription{
+            line-height: 1;
+            padding-top: 10px;
+            padding-bottom: 15px;
+         }
+ }

@@ -1,0 +1,17 @@
+@import './Career/Career.css';
+@import './Career/Career_components/flickity.css';
+
+
+*{
+   
+   
+}
+
+
+body{
+    background-color: black;
+}
+.sidebar-link.active-link {
+    color: red; /* Or any other style to highlight the active link */
+  }
+  

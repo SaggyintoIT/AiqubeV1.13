@@ -1,0 +1,351 @@
+.application {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.bg-form {
+  background-color: rgba(255, 255, 255, 0.518);
+  width: auto;
+  opacity: 1;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.fname {
+  border-radius: 20px;
+  width: 20rem;
+  padding: 1rem;
+  border: none;
+  color: black;
+  height: 3rem;
+  margin-bottom: 1.3rem;
+  outline: none;
+}
+
+.customFileInput::-webkit-file-upload-button {
+  padding: 5px 5px;
+  font-size: 1rem;
+  background-color: #DB2C2C;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 17rem;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 0.5rem;
+  outline: none;
+  background-color: rgb(255, 255, 255); 
+  color: #333; 
+  font-size: 1rem; 
+}
+
+.left select option {
+  background-color: white; /* Background color of options */
+  color: #333; /* Text color of options */
+  font-size: 1rem; /* Font size of options */
+}
+
+.full {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.MyOptions {
+  width: 20rem;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 1.3rem;
+  background-color: rgb(255, 255, 255); 
+  color: #333; 
+  font-size: 1rem; 
+  height: 3.4rem; 
+}
+
+.myformsec {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myformsec .formheader h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.Submit {
+  padding: 5px 5px;
+  font-size: 1rem;
+  width: 7rem;
+  height: 2.2rem;
+  background-color: #DB2C2C;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  padding-left: 2rem;
+  flex-direction: column;
+  height: 18rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paraform {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Myuploadsec {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.Submit:hover {
+  background: rgb(224, 45, 45);
+  transform: scale(1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .bg-form {
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    
+  }
+
+  .full {
+    flex-direction: column;
+  }
+  .imagevec{
+    width: 30rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-form {
+    width: 100%;
+  }
+  .fname{
+    width: 30rem
+  }
+  textarea{
+    width: 30rem;
+    
+  }
+  .MyOptions{
+    width: 30rem;
+  }
+
+  .application {
+    flex-direction: column;
+    gap: 1rem; /* Adjust the gap for smaller screens */
+  }
+
+  .full {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding-left: 0; /* Remove padding for smaller screens */
+  }
+}
+
+/* Additional Media Queries for Smaller Devices */
+@media (max-width: 480px) {
+.application{
+  width: auto;
+}
+  .bg-form {
+    
+    width: 100%;
+    border: none;
+  }
+
+  .fname,
+  .MyOptions,
+  textarea {
+    width: 100%; /* Full width for input elements */
+  }
+
+  .Submit {
+    width: 100%; /* Full width for submit button */
+  }
+}
+
+@media (max-width: 320px) {
+  .bg-form {
+    
+    width: 20rem;
+  }
+
+  .fname,
+  .MyOptions,
+  textarea {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .Submit {
+    font-size: 0.9rem; /* Adjust font size for the button */
+  }
+}
+@media (max-width: 1372px) {
+  .bg-form {
+    
+  
+  }
+
+  .fname,
+  .MyOptions,
+  textarea {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .Submit {
+    font-size: 0.9rem; /* Adjust font size for the button */
+  }
+}
+@media (max-width:1350px)and (min-width:1250px) {
+  .bg-form {
+    
+    width: auto;
+    margin-bottom:2rem;
+  }
+  .imagevec{
+    width:19rem;
+  }
+}
+@media (max-width: 1192px) and (min-width: 1028px) {
+  .bg-form {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+  .fname{
+    width: 17rem;
+  }
+  .MyOptions{
+    width: 17rem;
+  }
+  textarea{
+    width: 14rem;
+    padding: 0;
+  }
+
+  .imagevec {
+    width: 29rem; /* Default width for max-width */
+    max-width: 100%; /* Ensures it doesn't exceed the parent container */
+    min-width: 20rem; /* Minimum width when the screen is smaller */
+  }
+}
+@media (max-width: 879px) and (min-width: 770px) {
+  .bg-form {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .imagevec {
+    width: 27rem;; /* Default width for the container */
+    /* Minimum width when screen width >= 770px */
+  }
+}
+
+@media (max-width: 879px) and (min-width: 770px) {
+  .bg-form {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .imagevec {
+    width: 27rem;; /* Default width for the container */
+    /* Minimum width when screen width >= 770px */
+  }
+}
+
+@media (max-width: 962px) and (min-width: 769px) {
+  .bg-form {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .imagevec {
+    width: 18rem;; /* Default width for the container */
+    /* Minimum width when screen width >= 770px */
+  }
+}
+
+
+
+@media (max-width: 962px) and (min-width: 769px) {
+  .bg-form {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .imagevec {
+    width: 18rem;; /* Default width for the container */
+    /* Minimum width when screen width >= 770px */
+  }
+}
+@media (max-width: 1249px) and (min-width: 1193px) {
+  .bg-form{
+    width: auto;
+    margin-bottom: 2rem;
+
+  }
+  .imagevec{
+    width: 22rem;
+  }
+}
+@media (max-width:1104px) and (min-width:1028px){
+  .bg-form{
+    width: auto;
+  }
+    .imagevec{
+      width: 16rem;
+    }
+}
+
+

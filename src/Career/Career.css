@@ -1,0 +1,234 @@
+/* App.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+/* Career.css */
+@import './Career_components//flickity.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  overflow-x: hidden;
+}
+
+.heroSec {
+  width: 100%;
+  min-height: 100vh;
+  background: url('./career_assets/CareerHerosec.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Optional: Additional styles for inner content to maintain responsiveness */
+.heroMid {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.heroMid .herotitle h1 {
+  margin: 0;
+  font-size: 6.3rem;
+  font-weight: 200;
+  font-family: 'Aoboshi One', sans-serif;
+  background: linear-gradient(90deg, #ede7e7, #d8d4d4d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroMid .miniHeader p {
+  margin: 10px 0;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.heroMid .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heroMid .buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.play{
+  margin-right: 1rem;
+}
+
+.heroMid .buttons span {
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.miniHeader{
+ 
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Heropara{
+
+  padding-bottom: 1rem;
+}
+.Storysec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .heroMid .herotitle h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroMid {
+    margin-top: 10%;
+  }
+
+  .heroMid .herotitle h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSec {
+    padding: 2rem 1rem;
+  }
+
+  .heroMid {
+    margin-top: 5%;
+    padding: 1rem;
+  }
+
+  .heroMid .herotitle h1 {
+    font-size: 3rem;
+  }
+
+  .heroMid .miniHeader p {
+    font-size: 0.9rem;
+  }
+
+  .heroMid .buttons button, .heroMid .buttons span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroMid .herotitle h1 {
+    font-size: 2.5rem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+
+  .heroMid .miniHeader p {
+    font-size: 0.8rem;
+  }
+
+  .heroMid .buttons button, .heroMid .buttons span {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroMid .herotitle h1 {
+    font-size: 2.4rem;
+    padding-top: 1rem;
+  }
+  .herotitle{
+   
+    width: auto;
+    margin-top: 2rem;
+  }
+
+  .heroMid .miniHeader p {
+    font-size: 0.7rem;
+  }
+
+  .heroMid .buttons button, .heroMid .buttons span {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+}
+/* Mid Section */
+.midsec {
+  width: 100vw;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.midsecheader p {
+  color: #ffffff; /* Adjust text color as needed */
+  font-family: 'Fredoka One', cursive;
+  font-size: 3rem;
+  
+  margin-bottom: 1rem;
+}
+
+.jobsHeader {
+  color: #DB2C2C;
+}
+
+.midsecpara p { 
+  font-size: 1rem;
+  color: #ffffff; /* Adjust text color as needed */
+  font-family: sans-serif;
+  margin-top: 1rem;
+  max-width: 600px; /* Optional: limit the width for better readability */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .midsecheader p {
+    font-size: 2.5rem;
+  }
+
+  .midsecpara p {
+    font-size: 0.9rem;
+  }
+  .miniHeader{
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .midsecheader p {
+    font-size: 2rem;
+  }
+
+  .midsecpara p {
+    font-size: 0.8rem;
+  }
+}
