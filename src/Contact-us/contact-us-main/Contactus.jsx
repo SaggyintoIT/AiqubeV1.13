@@ -20,7 +20,7 @@ function Contactus() {
 <Banner/>
     <div className="content">
         <p>Get In Touch</p>
-        <p id="content_discription">we’d Love to hear from you, please fill out the form</p>
+        <p id="content_discription">We appreciate your interest in AIqube technologies . Please fill out the form below to reach us.</p>
     </div>
 <Form/>
 <Footer/>
